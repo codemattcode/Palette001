@@ -1,0 +1,59 @@
+@import colour
+@import flex
+@import font
+@import form
+@import reset
+@import utility
+@import breakpoints
+
+/* ----------------------- */
+/* BASELINE */
+/* ----------------------- */
+
+\:root
+  -webkit-font-smoothing: antialiased
+  -webkit-text-rendering: optimizeLegibility
+  user-select: none
+html
+  font-size: 20px
+// SOME INCLUDES DONT REQUIRE EM/REM/PX SUFFIX !important
+html, body
+  background: $cyanish
+  font-family: "roboto", sans-serif
+  font-weight: $regular
+  color: $blackish
+
+/* ---------------------------------------------- */
+/* REUSABLES */ DELETE AND REPLACE FROM HERE DOWN */
+/* ---------------------------------------------- */
+
+.container
+  +pad(50)
+  +mobile
+    +pad(20)
+    font-size: 50%
+h1
+  // font-size: 10rem
+  // alternatively use vw instead of rem or fitText
+  font-family: "Playfair", sans-serif
+  font-weight: $bold
+  color: $greyish
+p, .icon-p
+  // font-size: 3rem
+  // alternatively use vw instead of rem or fitText
+  font-family: "Merriweather", sans-serif
+  font-weight: $bold
+  margin: 10px 0
+.icon-p
+  color: $greyish
+.row
+  max-width: 1140px
+  margin: 0 auto
+
+i
+  color: $redish
+  margin-right: 2px
+
+/* ----------------------- */
+/* WILDCARDS */
+/* ----------------------- */
